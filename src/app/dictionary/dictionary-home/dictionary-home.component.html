@@ -1,0 +1,16 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Tiếng việt</th>
+      <th>Tiếng anh</th>
+      <th>Chi tiết</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dictionary of listDictionary">
+      <td>{{dictionary.vn}}</td>
+      <td>{{dictionary.en}}</td>
+      <td><a [routerLink]="['/dictionary/detail',dictionary.id]" routerLinkActive="router-link-active" >Xem chi tiết</a></td>
+    </tr>
+  </tbody>
+</table>

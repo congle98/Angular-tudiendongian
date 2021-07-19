@@ -1,0 +1,10 @@
+<form [formGroup]="myForm" (ngSubmit)="addDictionary()">
+    <label for="vn">Tiếng việt</label>
+    <input formControlName="vn" id="vn" type="text">
+    <label for="en">Tiếng anh</label>
+    <input formControlName="en" id="en" type="text">
+    <button type="submit">Thêm</button>
+
+</form>
+<app-dictionary-home></app-dictionary-home>
+<router-outlet></router-outlet>
